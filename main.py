@@ -1,16 +1,19 @@
 def main():
-    """
-    ##################################################
-    Comlete your code here
-    Use m_perc and f_perc for your results
-    ##################################################
-    """
+    num_male = int(input('Number of males: ' ))
+    num_female = int(input('Number of females: ' ))
 
-    """
-    ########################################
-    # Do not delete the return statement
-    ########################################
-    """
+
+    total = num_male + num_female
+
+
+    m_perc = (100 * num_male)/total
+    f_perc = (100 * num_female)/total
+
+
+
+    print(f"{round(m_perc,2)} % are male")
+    print(f"{round(f_perc,2)} % are female")
+
     return m_perc, f_perc
 
 
